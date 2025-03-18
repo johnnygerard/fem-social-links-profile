@@ -1,4 +1,4 @@
-import { SocialLink } from "@/component/social-link";
+import { AppLink } from "@/component/app-link";
 import { Metadata } from "next";
 import { memo } from "react";
 
@@ -14,7 +14,7 @@ const NotFound = () => {
         Sorry, the page you are looking for does not exist.
       </p>
       <div className="mt-4">
-        <SocialLink
+        <AppLink
           link={{
             text: "Back to Home",
             url: "/",

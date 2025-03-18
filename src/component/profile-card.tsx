@@ -1,4 +1,4 @@
-import { SocialLink } from "@/component/social-link";
+import { AppLink } from "@/component/app-link";
 import type { SocialLinkJson } from "@/type/social-link-json";
 import { cn } from "@/util/cn";
 import Image from "next/image";
@@ -40,7 +40,7 @@ export const ProfileCard = memo(({ className, socialLinks }: Props) => {
       <ul className="flex flex-col gap-4">
         {socialLinks.map((link) => (
           <li key={link.text}>
-            <SocialLink link={link} />
+            <AppLink link={link} />
           </li>
         ))}
       </ul>

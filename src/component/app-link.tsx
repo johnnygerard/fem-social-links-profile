@@ -9,7 +9,7 @@ type Props = {
   link: SocialLinkJson;
 };
 
-export const SocialLink = memo(({ className, link: { text, url } }: Props) => {
+export const AppLink = memo(({ className, link: { text, url } }: Props) => {
   return (
     <Link
       className={cn(
@@ -24,4 +24,4 @@ export const SocialLink = memo(({ className, link: { text, url } }: Props) => {
   );
 });
 
-SocialLink.displayName = "SocialLink";
+AppLink.displayName = "AppLink";

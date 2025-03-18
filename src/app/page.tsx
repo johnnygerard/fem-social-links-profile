@@ -1,11 +1,7 @@
 import { memo } from "react";
 
 const HomePage = () => {
-  return (
-    <div className="grid min-h-screen place-items-center">
-      <h1>Deployment successful!</h1>
-    </div>
-  );
+  return <h1 className="text-white">Deployment successful!</h1>;
 };
 
 export default memo(HomePage);

@@ -45,7 +45,12 @@ type Props = {
 const RootLayout = ({ children }: Props) => {
   return (
     <html className={cn(inter.variable, "font-sans antialiased")} lang="en-US">
-      <body>
+      <body
+        className={cn(
+          "min-h-screen min-w-min bg-grey-900",
+          "grid place-items-center px-6 py-10 tb:p-10",
+        )}
+      >
         {children}
         <Noscript />
       </body>

@@ -1,5 +1,5 @@
+import { SocialLink } from "@/component/social-link";
 import { Metadata } from "next";
-import Link from "next/link";
 import { memo } from "react";
 
 export const metadata: Metadata = {
@@ -14,9 +14,12 @@ const NotFound = () => {
         Sorry, the page you are looking for does not exist.
       </p>
       <div className="mt-4">
-        <Link href="/" className="text-white underline hover:text-gray-200">
-          Back to Home
-        </Link>
+        <SocialLink
+          link={{
+            text: "Back to Home",
+            url: "/",
+          }}
+        />
       </div>
     </div>
   );

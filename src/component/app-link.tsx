@@ -17,7 +17,7 @@ export const AppLink = memo(({ className, link: { text, url } }: Props) => {
     <Link
       className={cn(
         "tw_outline block rounded-lg bg-grey-700 p-3",
-        "text-sm leading-tight font-bold text-white",
+        "text-sm/[1.5] font-bold text-white",
         isHovering
           ? "animate-link-enter"
           : hasInteracted && "animate-link-leave",

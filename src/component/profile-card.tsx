@@ -19,7 +19,7 @@ export const ProfileCard = memo(({ className, socialLinks }: Props) => {
       )}
     >
       <Image
-        className="mx-auto size-20 rounded-full"
+        className="mx-auto size-22 rounded-full"
         src="/asset/image/avatar.jpeg"
         width={176}
         height={176}
@@ -27,14 +27,14 @@ export const ProfileCard = memo(({ className, socialLinks }: Props) => {
         alt=""
       />
       <hgroup>
-        <h1 className="text-2xl leading-9 font-semibold text-white">
+        <h1 className="text-2xl/[1.5] font-semibold text-white">
           Jessica Randall
         </h1>
-        <p className="mt-1 text-sm leading-tight font-bold text-green">
+        <p className="mt-1 text-sm/[1.5] font-bold text-green">
           London, United Kingdom
         </p>
       </hgroup>
-      <blockquote className="text-sm leading-tight font-normal text-white">
+      <blockquote className="text-sm/[1.5] font-normal text-white">
         &#34;Front-end developer and avid reader.&#34;
       </blockquote>
       <ul className="flex flex-col gap-4">

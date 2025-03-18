@@ -45,4 +45,22 @@
   }
   --animate-fade-in: fadeIn var(--default-transition-duration)
     var(--default-transition-timing-function);
+
+  @keyframes linkEnter {
+    to {
+      background-color: var(--color-green);
+      color: var(--color-grey-700);
+    }
+  }
+  --animate-link-enter: linkEnter 600ms forwards
+    var(--default-transition-timing-function);
+
+  @keyframes linkLeave {
+    from {
+      background-color: var(--color-green);
+      color: var(--color-grey-700);
+    }
+  }
+  --animate-link-leave: linkLeave 600ms
+    var(--default-transition-timing-function);
 }

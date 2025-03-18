@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const NotFound = () => {
   return (
-    <div className="w-full max-w-96 rounded-xl bg-grey-800 p-6 text-center">
+    <div className="rounded-xl bg-grey-800 p-6 text-center">
       <h1 className="text-2xl font-semibold text-white">404 Not Found</h1>
       <p className="mt-2 text-base font-normal text-white">
         Sorry, the page you are looking for does not exist.

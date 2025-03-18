@@ -14,7 +14,7 @@ export const ProfileCard = memo(({ className, socialLinks }: Props) => {
     <div
       className={cn(
         "flex flex-col gap-6 text-center",
-        "w-full max-w-96 rounded-xl bg-grey-800 p-6 tb:p-10",
+        "rounded-xl bg-grey-800 p-6 tb:p-10",
         className,
       )}
     >

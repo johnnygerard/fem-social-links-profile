@@ -51,7 +51,7 @@ const RootLayout = ({ children }: Props) => {
           "grid place-items-center px-6 py-10 tb:p-10",
         )}
       >
-        <main>{children}</main>
+        <main className="w-full max-w-96">{children}</main>
         <Noscript />
       </body>
     </html>

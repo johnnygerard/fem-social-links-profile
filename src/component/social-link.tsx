@@ -15,6 +15,8 @@ export const SocialLink = memo(({ className, link: { text, url } }: Props) => {
       className={cn(
         "block rounded-lg bg-grey-700 p-3 hover:bg-green",
         "text-sm leading-tight font-bold text-white hover:text-grey-700",
+        "outline-2 outline-offset-2 transition-[outline-color]",
+        "outline-transparent focus-visible:outline-green",
         className,
       )}
       href={url}

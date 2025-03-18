@@ -19,7 +19,7 @@ export const ProfileCard = memo(({ className, socialLinks }: Props) => {
       )}
     >
       <Image
-        className="mx-auto size-20 rounded-full"
+        className="mx-auto size-22 rounded-full"
         src="/asset/image/avatar.jpeg"
         width={176}
         height={176}

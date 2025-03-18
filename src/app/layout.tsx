@@ -15,7 +15,7 @@ const APP_NAME = "Social links profile";
 const DESCRIPTION = `Frontend Mentor challenge: ${APP_NAME}`;
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://example.com/placeholder"),
+  metadataBase: new URL("https://fem-social-links-profile-jgerard.vercel.app/"),
   title: {
     template: `%s | ${APP_NAME}`,
     default: APP_NAME,

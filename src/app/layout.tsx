@@ -1,21 +1,21 @@
 import { Noscript } from "@/component/noscript";
 import { cn } from "@/util/cn";
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { memo, ReactNode } from "react";
 
-const geistSans = Geist({
+const inter = Inter({
   display: "swap",
   subsets: ["latin"],
-  variable: "--font-geist-sans",
+  variable: "--font-inter",
 });
 
-const APP_NAME = "placeholder";
-const DESCRIPTION = "placeholder";
+const APP_NAME = "Social links profile";
+const DESCRIPTION = `Frontend Mentor challenge: ${APP_NAME}`;
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://example.com/placeholder"),
+  metadataBase: new URL("https://fem-social-links-profile-jgerard.vercel.app/"),
   title: {
     template: `%s | ${APP_NAME}`,
     default: APP_NAME,
@@ -44,12 +44,14 @@ type Props = {
 
 const RootLayout = ({ children }: Props) => {
   return (
-    <html
-      className={cn(geistSans.variable, "font-sans antialiased")}
-      lang="en-US"
-    >
-      <body>
-        {children}
+    <html className={cn(inter.variable, "font-sans antialiased")} lang="en-US">
+      <body
+        className={cn(
+          "min-h-screen min-w-min bg-grey-900",
+          "grid place-items-center px-6 py-10 tb:p-10",
+        )}
+      >
+        <main>{children}</main>
         <Noscript />
       </body>
     </html>

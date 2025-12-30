@@ -1,4 +1,4 @@
-export type SocialLinkJson = {
+export type SocialLink = {
   text: string;
   url: string;
 };

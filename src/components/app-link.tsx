@@ -16,7 +16,7 @@ export const AppLink: FC<Props> = ({ className, link: { text, url } }) => {
   return (
     <Link
       className={tw(
-        "tw_outline bg-grey-700 block rounded-lg p-3",
+        "tw_outline block rounded-lg bg-grey-700 p-3",
         "text-sm/normal font-bold text-white",
         isHovering
           ? "animate-link-enter"

@@ -14,7 +14,7 @@ export const ProfileCard: FC<Props> = ({ className, socialLinks }) => {
     <div
       className={tw(
         "flex flex-col gap-6 text-center",
-        "bg-grey-800 tb:p-10 rounded-xl p-6",
+        "rounded-xl bg-grey-800 p-6 tb:p-10",
         className,
       )}
     >
@@ -30,7 +30,7 @@ export const ProfileCard: FC<Props> = ({ className, socialLinks }) => {
         <h1 className="text-2xl/normal font-semibold text-white">
           Jessica Randall
         </h1>
-        <p className="text-green mt-1 text-sm/normal font-bold">
+        <p className="mt-1 text-sm/normal font-bold text-green">
           London, United Kingdom
         </p>
       </hgroup>

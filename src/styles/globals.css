@@ -11,9 +11,9 @@
   input,
   select,
   textarea {
-    @apply outline-2 outline-offset-0 outline-transparent;
+    @apply outline-2 outline-offset-2 outline-transparent;
     /* Note that `outline-style` needs the `:focus-visible` pseudo-class to override the `auto` default in Firefox */
-    @apply focus-visible:outline-blue-400 focus-visible:outline-solid;
+    @apply focus-visible:outline-green focus-visible:outline-solid;
   }
 }
 
@@ -32,5 +32,40 @@
 /* `@theme inline` is required when referencing CSS custom properties */
 /* @see https://tailwindcss.com/docs/theme#referencing-other-variables */
 @theme inline {
-  --font-sans: var(--font-geist-sans);
+  --breakpoint-tb: 48em; /* Tablet: 768px */
+  --breakpoint-dt: 90em; /* Desktop: 1440px */
+
+  --color-grey-900: #141414;
+  --color-grey-800: #1f1f1f;
+  --color-grey-700: #333333;
+  --color-white: #ffffff;
+  --color-green: #c4f82a;
+
+  --font-sans: var(--font-inter);
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  }
+  --animate-fade-in: fadeIn var(--default-transition-duration)
+    var(--default-transition-timing-function);
+
+  @keyframes linkEnter {
+    to {
+      background-color: var(--color-green);
+      color: var(--color-grey-700);
+    }
+  }
+  --animate-link-enter: linkEnter 600ms forwards
+    var(--default-transition-timing-function);
+
+  @keyframes linkLeave {
+    from {
+      background-color: var(--color-green);
+      color: var(--color-grey-700);
+    }
+  }
+  --animate-link-leave: linkLeave 600ms
+    var(--default-transition-timing-function);
 }

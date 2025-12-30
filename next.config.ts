@@ -1,20 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  reactStrictMode: true,
-  headers: async () => [
-    {
-      source: "/:path*",
-      headers: [
-        // Prevent search engines from indexing the website
-        // @see https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag#directives
-        {
-          key: "x-robots-tag",
-          value: "none",
-        },
-      ],
-    },
-  ],
+  images: {
+    loader: "custom",
+    loaderFile: "src/image-loader.ts",
+  },
+  output: "export",
+  reactCompiler: true,
 };
 
 export default nextConfig;

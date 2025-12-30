@@ -1,13 +1,11 @@
 {
-  "version": "2.0.0",
   "tasks": [
     {
-      "type": "npm",
-      "script": "dev",
+      "detail": "next dev --turbo --hostname localhost",
+      "isBackground": true,
+      "label": "npm: dev",
       "problemMatcher": [
         {
-          "owner": "typescript",
-          "pattern": "$tsc",
           "background": {
             "activeOnStart": true,
             "beginsPattern": {
@@ -16,12 +14,36 @@
             "endsPattern": {
               "regexp": "✓ Ready"
             }
-          }
+          },
+          "owner": "typescript",
+          "pattern": "$tsc"
         }
       ],
-      "label": "npm: dev",
-      "detail": "next dev --turbopack",
-      "isBackground": true
+      "script": "dev",
+      "type": "npm"
+    },
+    {
+      "detail": "npm run build && serve out",
+      "isBackground": true,
+      "label": "npm: start",
+      "problemMatcher": [
+        {
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": {
+              "regexp": "build"
+            },
+            "endsPattern": {
+              "regexp": "Serving!"
+            }
+          },
+          "owner": "typescript",
+          "pattern": "$tsc"
+        }
+      ],
+      "script": "start",
+      "type": "npm"
     }
-  ]
+  ],
+  "version": "2.0.0"
 }

@@ -12,20 +12,36 @@ from [Frontend Mentor](https://www.frontendmentor.io/).
 
 ### Frontend
 
-- **React Framework**: [Next.js 15](https://nextjs.org/)
-- **Style**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **UI library**: [React 19](https://react.dev/)
+- **Framework**: [Next.js 16](https://nextjs.org/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
 
 ### Backend
 
-- **CDN**: Static assets served from [Vercel Edge Network](https://vercel.com/docs/edge-network/overview).
+- **CDN**: [Vercel](https://vercel.com/docs/cdn)
+
+### Quality Assurance
+
+- **Unit testing**: [Vitest](https://vitest.dev/)
+- **End-to-end testing**: [Playwright](https://playwright.dev/)
+
+## How to Update
+
+To check for outdated packages, run `npm outdated`.
+
+```bash
+# Update dependencies (this will rewrite package-lock.json and package.json)
+npm update --save
+npm install --save-exact --save-dev prettier@latest prettier-plugin-tailwindcss@latest
+```
 
 ## Dev Environment & Tools
 
-- System: [Ubuntu](https://ubuntu.com/desktop)
-- Editor: [WebStorm](https://www.jetbrains.com/webstorm/)
-- Formatter: [Prettier](https://prettier.io/)
-- Linter: [ESLint](https://eslint.org/)
-- AI assistant: [GitHub Copilot](https://github.com/features/copilot)
+- **System**: [Ubuntu](https://ubuntu.com/desktop)
+- **Editor**: [VS Code](https://code.visualstudio.com/)
+- **Formatter**: [Prettier](https://prettier.io/)
+- **Linter**: [ESLint](https://eslint.org/)
+- **AI assistant**: [GitHub Copilot](https://github.com/features/copilot)
 
 ## Copyright
 

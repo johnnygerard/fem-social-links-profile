@@ -1,14 +1,6 @@
-import { ProfileCard } from "@/component/profile-card";
-import { readFile } from "node:fs/promises";
-import { join } from "node:path";
-import { cwd } from "node:process";
-import { memo } from "react";
+import type { FC } from "react";
+import { ProfileCard } from "~/components/profile-card";
+import { socialLinks } from "~/data/social-links";
 
-const HomePage = async () => {
-  const path = join(cwd(), "data/social-links.json");
-  const json = await readFile(path, "utf8");
-
-  return <ProfileCard socialLinks={JSON.parse(json)} />;
-};
-
-export default memo(HomePage);
+const HomePage: FC = () => <ProfileCard socialLinks={socialLinks} />;
+export default HomePage;

@@ -1,12 +1,12 @@
-import { AppLink } from "@/component/app-link";
-import { Metadata } from "next";
-import { memo } from "react";
+import type { Metadata } from "next";
+import type { FC } from "react";
+import { AppLink } from "~/components/app-link";
 
 export const metadata: Metadata = {
   title: "404 Not Found",
 };
 
-const NotFound = () => {
+const NotFound: FC = () => {
   return (
     <div className="rounded-xl bg-grey-800 p-6 text-center">
       <h1 className="text-2xl font-semibold text-white">404 Not Found</h1>
@@ -25,4 +25,4 @@ const NotFound = () => {
   );
 };
 
-export default memo(NotFound);
+export default NotFound;

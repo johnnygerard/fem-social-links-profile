@@ -1,7 +1,12 @@
-# Next.js 16 Starter
+# Frontend Mentor | Social Links Profile
 
-This starter repository facilitates the creation of new Next.js projects using the configuration described below.  
-To learn how to use a GitHub template repository, check out [Creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+This is my solution to
+the [Social links profile challenge](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ)
+from [Frontend Mentor](https://www.frontendmentor.io/).
+
+[![project status](https://img.shields.io/badge/status-solution_published-success?style=for-the-badge)](https://www.frontendmentor.io/solutions/social-links-profile-with-css-animations-sdKZ0uNo_T)
+[![live site](https://img.shields.io/badge/live_site-blue?style=for-the-badge)](https://fem-social-links-profile-jgerard.vercel.app)
+[![Lighthouse report](https://img.shields.io/badge/lighthouse-F44B21?style=for-the-badge&logo=lighthouse&logoColor=fff)](https://googlechrome.github.io/lighthouse/viewer/?gist=0e6bb03fbd4870659719734c1989a4f0)
 
 ## Tech Stack
 

@@ -19,12 +19,12 @@ export const ProfileCard: FC<Props> = ({ className, socialLinks }) => {
       )}
     >
       <Image
+        alt=""
         className="mx-auto size-22 rounded-full"
-        src="/asset/image/avatar.jpeg"
+        preload={true}
+        src="avatar.jpeg"
         width={176}
         height={176}
-        priority
-        alt=""
       />
       <hgroup>
         <h1 className="text-2xl/normal font-semibold text-white">

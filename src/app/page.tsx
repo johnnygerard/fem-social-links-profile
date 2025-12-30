@@ -1,11 +1,6 @@
 import type { FC } from "react";
+import { ProfileCard } from "~/components/profile-card";
+import { socialLinks } from "~/data/social-links";
 
-const HomePage: FC = () => {
-  return (
-    <div className="grid min-h-screen place-items-center">
-      <h1>Deployment successful!</h1>
-    </div>
-  );
-};
-
+const HomePage: FC = () => <ProfileCard socialLinks={socialLinks} />;
 export default HomePage;
